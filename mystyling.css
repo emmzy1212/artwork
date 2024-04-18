@@ -1,0 +1,480 @@
+/* Hover effect */
+.my-section .media-testi {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .my-section .media-testi::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color */
+    transition: all 0.3s ease;
+  }
+  
+  .my-section .media-testi:hover::after {
+    left: 100%;
+  }
+  
+  .my-section .media__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Text color */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+  }
+  
+  .my-section .media-testi:hover .media__title {
+    opacity: 1; /* Show on hover */
+  }
+  
+  /* Hover effect for media-service-2 */
+.media-service-2:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Animation for media__icon */
+  .media__icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .media-service-2:hover .media__icon {
+    transform: translateY(-5px);
+  }
+  
+  /* Animation for media__title */
+  .media__title {
+    transition: color 0.3s ease;
+  }
+  
+  .media-service-2:hover .media__title a {
+    color: #ff6b6b;
+  }
+  
+  /* Animation for line */
+  .line {
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+  
+  .media-service-2:hover .line {
+    width: 100%;
+  }
+
+  .media__body {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+  }
+  
+  .media__body::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('flower.png'); /* Adjust path to your flower image */
+    background-size: cover;
+    z-index: -1;
+    transition: transform 0.5s ease;
+  }
+  
+  .media__body:hover {
+    background-color: #f0f0f0; /* Change to your desired hover background color */
+  }
+  
+  .media__body:hover::before {
+    transform: scale(2);
+  }
+  
+  .au-btn {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .au-btn:hover {
+    transform: translateX(5px); /* Adjust distance of hover effect */
+  }
+
+
+  .p-t-120 {
+  transition: background-color 0.3s ease;
+}
+
+.p-t-120:hover {
+  background-color: #f0f0f0; /* Change to your desired hover background color */
+}
+
+.media__body {
+  position: relative;
+  overflow: hidden;
+}
+
+.media__body::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-image: url('flower.png'); /* Adjust path to your flower image */
+  background-size: cover;
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.media__body:hover::before {
+  transform: scale(2);
+}
+
+.au-btn {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.au-btn:hover {
+  transform: translateX(5px); /* Adjust distance of hover effect */
+}
+
+.p-t-120 {
+    background-color: #f0f0f0; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-t-120:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+  }
+  
+  .media__body {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .media__body::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-image: url('flower.png'); /* Adjust path to your flower image */
+    background-size: cover;
+    z-index: -1;
+    transition: transform 0.5s ease;
+  }
+  
+  .media__body:hover::before {
+    transform: scale(2);
+  }
+  
+  .au-btn {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .au-btn:hover {
+    transform: translateX(5px); /* Adjust distance of hover effect */
+  }
+  
+
+  .p-t-110 {
+    background-color: #f0f0f0; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-t-110:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+  }
+  
+  .media-team {
+    position: relative;
+  }
+  
+  .media-team::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust transparency and color as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media-team:hover::before {
+    opacity: 1;
+  }
+  
+  .media__img-wrap {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .media__img-wrap::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/overlay.png'); /* Adjust path to your overlay image */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media__img-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .media-team:hover .list-social {
+    transform: translateY(-50%);
+  }
+  
+  .list-social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .list-social__item {
+    margin: 0 5px;
+  }
+  
+  .list-social__item a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .list-social__item a:hover {
+    color: #ff9900; /* Change to your desired hover color */
+  }
+
+  .p-b-100.p-t-70 {
+    background-color: #f0f0f0; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .p-b-100.p-t-70:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+  }
+  
+  .media-project-2 {
+    position: relative;
+  }
+  
+  .media-project-2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust transparency and color as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media-project-2:hover::before {
+    opacity: 1;
+  }
+  
+  .media__img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .media__img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/overlay.png'); /* Adjust path to your overlay image */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media__img:hover::before {
+    opacity: 1;
+  }
+  
+  .media-project-2:hover .list-social {
+    transform: translateY(-50%);
+  }
+  
+  .list-social {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    transition: transform 0.3s ease;
+  }
+  
+  .list-social__item {
+    margin: 0 5px;
+  }
+  
+  .list-social__item a {
+    display: inline-block;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  .list-social__item a:hover {
+    color: #ff9900; /* Change to your desired hover color */
+  }
+
+  .my-section {
+    background-color: #f0f0f0; /* Default background color */
+    transition: background-color 0.3s ease;
+  }
+  
+  .my-section:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+  }
+  
+  .media-testi {
+    position: relative;
+  }
+  
+  .media-testi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust transparency and color as needed */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media-testi:hover::before {
+    opacity: 1;
+  }
+  
+  .media__img {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .media__img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/overlay.png'); /* Adjust path to your overlay image */
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .media__img:hover::before {
+    opacity: 1;
+  }
+  #header {
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s ease;
+    background-color: rgb(220, 220, 220);
+  }
+  
+  #header:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+  }
+  
+  .logo img {
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+  }
+    
+  #header a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  #header a:hover {
+    background-color: #cccccc; /* Change to your desired hover background color */
+    border-color: #333333; /* Change to your desired border color */
+    color: #ffffff; /* Change to your desired text color */
+    transform: translateY(-2px);
+  }
+  
+  /* Add animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #header a:hover {
+    animation: pulse 0.5s infinite alternate;
+  }
+
+  #header a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #ffffff; /* Default background color */
+  }
+  
+  #header a:hover {
+    background-color: #1f1e1c; /* Change to your desired hover background color */
+    border-color: #141313; /* Change to your desired border color */
+    color: #ffffff; /* Change to your desired text color */
+    transform: translateY(-2px);
+  }
+  
+  /* Add animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #header a:hover {
+    animation: pulse 0.5s infinite alternate;
+  }
+  
+  
